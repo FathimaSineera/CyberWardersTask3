@@ -5,10 +5,11 @@
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <!--unicons = go to https://iconscout.com/unicons/select 'start using'/ select 'line'/ copy the link-->
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
         <!--swiper css-->
-        <link href="" rel="stylesheet">
+        <link href="assets/css/swiper-bundle.min.css" rel="stylesheet">
         <!--css-->
         <link href="assets/css/style.css" rel="stylesheet">
 
@@ -615,10 +616,10 @@
                 <h2 class="section__title">Portfolio</h2>
                 <span class="section__subtitle">Most recent work</span>
 
-                <div class="portfolio__container container">
-                    <div>
+                <div class="portfolio__container container swiper-container mySwiper">
+                    <div class="swiper-wrapper">
                         <!--==================== PORTFOLIO 1 ====================-->
-                        <div class="portfolio__content grid">
+                        <div class="portfolio__content grid swiper-slide">
                             <img src="assets/img/portfolio1.jpg" alt="img1" class="portfolio__img">
         
                             <div class="portfolio__data">
@@ -632,7 +633,7 @@
                         </div>
 
                         <!--==================== PORTFOLIO 2 ====================-->
-                        <div class="portfolio__content grid">
+                        <div class="portfolio__content grid swiper-slide">
                             <img src="assets/img/portfolio2.jpg" alt="img1" class="portfolio__img">
 
                             <div class="portfolio__data">
@@ -645,7 +646,7 @@
                             </div>
                         </div>
                         <!--==================== PORTFOLIO 3 ====================-->
-                        <div class="portfolio__content grid">
+                        <div class="portfolio__content grid swiper-slide">
                             <img src="assets/img/portfolio3.jpg" alt="img1" class="portfolio__img">
 
                             <div class="portfolio__data">
@@ -658,13 +659,35 @@
                             </div>
                         </div>
                     </div>
+                    <!--=======add arrows======-->
+                    <div class="swiper-button-next">
+                        <!--<i class="uil uil-angle-right swiper-portfolio-icon"></i>-->
+                    </div>
+                    <div class="swiper-button-prev">
+                        <!--<i class="uil uil-angle-left-b swiper-portfolio-icon"></i>-->
+                    </div>
+                    <!--=======add pagination======-->
+                    <div class="swiper-pagination"></div>
                 </div>
-                
-                
                 
             </section>
             <!--==================== PROJECT IN MIND ====================-->
 
+            <section class="project section">
+                <div class="project__bg">
+                    <div class="project__container container grid">
+                        <div class="project__data">
+                            <h2 class="project__title">You have a new project</h2>
+                            <p class="project__description">Contact me now and get a 30% discount on your new project.</p>
+                            <a href="#Contact" class="button button--flex button--white">
+                                Contact me
+                                <i class="uil uil-message project__icon button__icon"></i>
+                            </a>
+                        </div>
+                        <img src="assets/img/project.png" alt="project" class="project__img">
+                    </div>
+                </div>
+            </section>
             <!--==================== TESTIMONIAL ====================-->
 
             <!--==================== CONTACT ME ====================-->
@@ -678,7 +701,7 @@
             <script></script>
         </footer>
         <!--swiper js-->
-        <script src=""></script>
+        <script src="assets/js/swiper-bundle.min.js"></script>
         <!--main js-->
         <script src="assets/js/main.js"></script>
     </body>
