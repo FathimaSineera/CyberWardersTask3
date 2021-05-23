@@ -92,7 +92,7 @@ modelCloses.forEach((modelClose) => {
 })
 
 /*==================== PORTFOLIO SWIPER  ====================*/
-let swiper = new Swiper(".mySwiper", {
+let swiperPortfolio = new Swiper(".portfolio__container", {
     cssMode: true,
     navigation: {
       nextEl: ".swiper-button-next",
@@ -106,8 +106,13 @@ let swiper = new Swiper(".mySwiper", {
   });
 
 /*==================== TESTIMONIAL ====================*/
-
-
+  let swiperTestimonial = new Swiper(".testimonial__container", {
+    pagination: {
+      el: ".swiper-pagination",
+      dynamicBullets: true,
+      dynamicBullets:true,
+    },
+  });
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 
 
